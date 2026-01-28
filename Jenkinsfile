@@ -1,5 +1,8 @@
 pipeline {
   agent any
+  triggers{
+    cron('* * * * *')
+  }
 
   environment {
     IMAGE_NAME = "aravind2003/internal"
